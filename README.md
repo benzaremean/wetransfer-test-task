@@ -45,7 +45,8 @@ So for the task I decided to use [webdriverio version 6](https://webdriver.io/) 
 
 > And recipient with email "youruseremail@example.com"
 
-4. Run the following command
+4. Install node version `12.18.3` or higher
+5. Run the following command from project root
 
 ```shell
 npm test
@@ -65,7 +66,11 @@ I used babel as compiler to allow me to use 'next generation' javascript
 
 There is a custom service `./allure-report-service` that generates allure reports on completion of tests
 
-Feature file, step definitions and world can be found in src/features
+Feature file, step definitions and world can be found in `src/features`
+
+Page objects are available in `src/pages`
+
+Files uploaded in the test are available in `src/files`
 
 I wrote two scenarios one for a single file upload and the other for multiple file uploads
 
