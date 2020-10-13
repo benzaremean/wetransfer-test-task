@@ -49,6 +49,7 @@ So for the task I decided to use [webdriverio version 6](https://webdriver.io/) 
 5. Run the following command from project root
 
 ```shell
+npm install
 npm test
 ```
 
