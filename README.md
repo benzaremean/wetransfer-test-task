@@ -67,11 +67,11 @@ I used babel as compiler to allow me to use 'next generation' javascript
 
 There is a custom service `./allure-report-service` that generates allure reports on completion of tests
 
-Feature file, step definitions and world can be found in `src/features`
+Feature file, step definitions and world can be found in [src/features](src/features)
 
-Page objects are available in `src/pages`
+Page objects are available in [src/pages](src/pages)
 
-Files uploaded in the test are available in `src/files`
+Files uploaded in the test are available in [src/files](src/files)
 
 I wrote two scenarios one for a single file upload and the other for multiple file uploads. The tests can make use of a single user as recipient and sender or two users if you wish to. Just add the users email and passwords to `./src/testdata/users.json`and author the feature file appropriately as mentioned in [step 3](#to-run-the-tests)
 
