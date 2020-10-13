@@ -72,7 +72,7 @@ Page objects are available in `src/pages`
 
 Files uploaded in the test are available in `src/files`
 
-I wrote two scenarios one for a single file upload and the other for multiple file uploads
+I wrote two scenarios one for a single file upload and the other for multiple file uploads. The tests can make use of a single user as recipient and sender or two users if you wish to. Just add the users email and passwords to `./src/testdata/users.json`and author the feature file appropriately as mentioned in [step 3](#to-run-the-tests)
 
 To correctly assert downloads I use the [devtools service](https://webdriver.io/docs/devtools-service.html) to change the default download location of the browser to `./tmp/<A UNIQUE STRING>`, a unique folder I create everytime step that triggers downloads is used. I use `fs.watch` to track changes in the folder and `browser.waitUntil` to poll until a file name pattern I expect is found in the folder. The helper along with others can be found in `src/helpers/index.js
 
