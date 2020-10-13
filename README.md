@@ -37,7 +37,7 @@ So for the task I decided to use [webdriverio version 6](https://webdriver.io/) 
 
 ## To run the tests
 
-1. Create at least one free account at wetransfer.com
+1. Create at least one free account at [wetransfer.com](https://wetransfer.com/)
 2. Enter the user email (key) and password (value) into `./src/testdata/users.json` as a json object
 3. In the background in `./src/features/upload_download.feature` replace the email int the two background steps
 
