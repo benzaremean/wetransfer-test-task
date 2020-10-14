@@ -55,6 +55,8 @@ npm test
 
 At the end of the test you can view the reports by running
 
+***Note: When viewing test results you might need to sort the steps in order descending by clicking the sort filter button as allure does not present them in proper sequence by default***
+
 ```shell
 npm run allure:open
 ```
