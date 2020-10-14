@@ -59,7 +59,7 @@ Then(/^the sent files should be available for download$/, async function () {
   await panelComponent.backToTransfers()
 });
 
-When(/^the sender triggers download$/, async function () {
+When(/^the (user|sender|recipient) triggers download$/, async function (sugar) {
   this.downloadPath = `${global.downloadDir}/${helpers.generateRandomString()}`
   await helpers.setDownloadDirectory(this.downloadPath)
   await panelComponent.downloadTransferItem(0);
